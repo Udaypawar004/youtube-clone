@@ -23,11 +23,8 @@ export const AppContext = (props) => {
         setLoading(true)
         fetchDataFromApi(`search/?q=${query}`).then((res) => {
             console.log(res);
-<<<<<<< HEAD
-            setSearchResult(res);
-=======
             setSearchResult(res)
->>>>>>> 2bd6c94964e17a0ae56bcb43c0ea5752750e7072
+            setSearchResult(res)
             setLoading(false);
         })
     }
