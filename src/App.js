@@ -1,15 +1,25 @@
 import React from 'react'
-import { AppContext } from './context/contextApi.js'
+import { BrowserRouter, Router, Route } from 'react-router-dom'; 
 
 import header from "./components/header.jsx"
 import feed from "./components/feed.jsx"
 import searchResult from "./components/searchResult.jsx"
 import videoDetails from "./components/videoDetails.jsx"
+import { AppContext } from './context/contextApi.js'
 
 const App = () => {
   return (
     <AppContext>
-      <div className="text-3xl">App</div>
+      <BrowserRouter>
+        <div className='flex flex-col h-full'>
+          <Header />
+          <Router>
+            <Route path='/' exact element={<feed />} />
+            <Route path='/searchResult/:searchQuery' element={<searchResult />} />
+            <Route path='/video/:id' element={<videoDetails />} />
+          </Router>
+        </div>
+      </BrowserRouter>
     </AppContext>
   );
 };
