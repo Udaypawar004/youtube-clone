@@ -4,7 +4,6 @@ const API_KEY = "c1087030aamsh6213cfd0ddd56abp11130ajsn7dc12eae09e7";
 
 const options = {
   params: {
-    q : 'desp',
     hl: 'en',
     gl: 'US'
   },
