@@ -1,10 +1,6 @@
 import React, { createContext, useState, useEffect } from "react";
 
-<<<<<<< HEAD
 import { fetchDataFromApi } from "../utils/api.js";
-=======
-import  {fetchDataFromApi}  from "../utils/api.js";
->>>>>>> 2bd6c94964e17a0ae56bcb43c0ea5752750e7072
 
 export const Context = createContext();
 

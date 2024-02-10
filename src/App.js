@@ -12,7 +12,7 @@ const App = () => {
     <AppContext>
       <BrowserRouter>
         <div className='flex flex-col h-full'>
-          <Header />
+          <header />
           <Router>
             <Route path='/' exact element={<feed />} />
             <Route path='/searchResult/:searchQuery' element={<searchResult />} />
